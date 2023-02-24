@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  backend:
+    build: ./Backend
+    container_name: backend_c
+    ports:
+      - '8000:8000'
+  frontend:
+    build: ./Frontend
+    container_name: frontend_c
+    ports:
+      - '3000:3000'
+
+  
